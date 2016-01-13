@@ -13,3 +13,6 @@ end
 
 # brace-delimite block
 File.open(filename) { |f| f.some_action }
+
+# methods can take a variable number of arguments
+receiver.method(arg1, *more_args)

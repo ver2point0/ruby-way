@@ -39,3 +39,14 @@ def other_method(name:, age:)
   # It's an error to call this method without specifying
   # values for name and age.
 end
+
+# singletons: defining a method on a per-object basis
+str = "Hello, World!"
+str2 = "Goodbye!"
+
+def str.spell
+  self.split(/./).join("-")
+end
+
+str.spell # "H-e-l-l-0-,- - -w-o-r-l-d-!"
+str2.spell # error!

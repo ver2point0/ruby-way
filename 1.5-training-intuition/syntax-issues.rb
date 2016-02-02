@@ -26,3 +26,8 @@ x = y +z
 x = y * z # multliplication of y and z
 x = y *z # invoking method y, passing an expansion of array z as a parameter
 
+# when parsing indentifiers, underscore is considered to be lowercase
+# an identifier may start with an underscore, but it will not be
+# a constant even if the next letter is uppercase
+
+# in linear nested-if statements, elsif is used rather than else if or elif, as in some languages

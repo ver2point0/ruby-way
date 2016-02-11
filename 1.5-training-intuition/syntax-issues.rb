@@ -31,3 +31,14 @@ x = y *z # invoking method y, passing an expansion of array z as a parameter
 # a constant even if the next letter is uppercase
 
 # in linear nested-if statements, elsif is used rather than else if or elif, as in some languages
+
+# Keywords in Ruby are not really reserved words. When a method is called on a receiver (or in other cases where there is no ambiguity),
+# a keyword may be used as a method name. Do this with caution, remembering that programs should be readable by humans.
+
+# keyword 'then' is optional (in 'if' and 'case' statements). Those who want to use it for readability may do so. The same is true
+# for 'do' in 'while' and 'until' loops.
+
+# question mark and exclamation point are not really part of the identifier that they modify but rather should be considered suffixes.
+# although, 'chomp' and 'chomp!' are considered different identifiers, it is not permissible to use these characters
+# in any other position in the word.
+# likewise, we use 'defined?' in Ruby, but 'defined' is the keyword.

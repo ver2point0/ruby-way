@@ -42,3 +42,13 @@ x = y *z # invoking method y, passing an expansion of array z as a parameter
 # although, 'chomp' and 'chomp!' are considered different identifiers, it is not permissible to use these characters
 # in any other position in the word.
 # likewise, we use 'defined?' in Ruby, but 'defined' is the keyword.
+
+# inside a string, # is used to signal expressions to be evaluated. in some circumstances, when # occurs in a string, it has 
+# to be escaped with a backslash for '{', '$', or '@'
+
+# becareful with spacing with the '?' in ternary operators
+# x = my_flag ? 23 : 45 # OK
+# x = my_flag? 23 : 45 # Syntax error
+
+# '=end' marker for embedded documentation should not be considered a token
+# it marks the entire line, any characters are not considered part of the program text but belong to the embedded documentation

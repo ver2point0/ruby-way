@@ -52,3 +52,8 @@ x = y *z # invoking method y, passing an expansion of array z as a parameter
 
 # '=end' marker for embedded documentation should not be considered a token
 # it marks the entire line, any characters are not considered part of the program text but belong to the embedded documentation
+
+# no arbitrary blocks in Ruby; can't start a block whenever you feel like it. Blocks are only allowed when they are needed, for example
+# when attached to an iterator. The exception is the begin-end block, which can be used basically anywhere
+
+# The keywords BEGIN and END are completely different from begin and end

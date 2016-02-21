@@ -57,3 +57,13 @@ x = y *z # invoking method y, passing an expansion of array z as a parameter
 # when attached to an iterator. The exception is the begin-end block, which can be used basically anywhere
 
 # The keywords BEGIN and END are completely different from begin and end
+
+# when strings bump together (static concatenation), the concatenation is of lower precedence than a method call
+# examples:
+# str = "First " 'second'.center(20) #examples 1 and 2 
+# str = "First " + 'second'.center(20) # are the same
+# str = "First second".center(20) # examples 3 and 4
+# str = ("First " + 'second').center(20) # are the same
+
+# Ruby has severl pseudovariables, which look like local variables but really serve specialized purposes.
+# They are self, nil, true, false __FILE__, and __LINE__

@@ -10,3 +10,8 @@
 # puts (-5 % 3) # prints 1
 # puts (5 % -3) # prints -1
 # puts (-5 % -3) # prints -2
+
+# a false value may be represented as a zero, a null string, a null character, or various other things
+# In Ruby, everything is true except false and nil
+
+# In Ruby, variables don't classes; only values have classes

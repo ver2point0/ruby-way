@@ -24,3 +24,14 @@
 # most of ruby's operations are really methods; the "punctuation" form of these methods is provided for familiarity and convenience.
 # first exception is the set of reflexive assignment operators (+=, -=, *=, and so on)
 # second exception is the following set: = .. ... ! not && and || or != !~
+
+# as in most (though not all) modern languages, Boolean operators are always short-circuited; that is, the evaluation of a Boolean expression
+# stops as soon as it truth value is known. In a sequence of or operations, the first true will stop evaluation;
+# in a string of and operations, the first false will stop evaluation.
+
+# prefix @@ is used for class variables (which are associated with the class rather than the instance).
+
+# loop is not a keyword; it is a Kernel method, not a control structure
+
+# some may find the syntax of unless-else to be slightly unintuitive. Because unless is the opposite of if, the else clause will be
+# executed if the condition is true.

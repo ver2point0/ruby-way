@@ -35,3 +35,17 @@
 
 # some may find the syntax of unless-else to be slightly unintuitive. Because unless is the opposite of if, the else clause will be
 # executed if the condition is true.
+
+# simpler Fixnum type is passed as an immediate value and therefore may not be changed from within methods. the same is true for true, false, and nil.
+
+# do not confuse && and || operators with & and |. these are used in C; && and || are for Boolean operations, and & and | are for arithmetic or bitwise operations.
+
+# and-or operators have lower precedence than the &&-|| operators.
+a = true
+b = false
+c = true
+d = true
+a1 = a && b or c && d
+a2 = a && (b or c) && d
+puts a1
+puts a2

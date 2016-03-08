@@ -41,11 +41,15 @@
 # do not confuse && and || operators with & and |. these are used in C; && and || are for Boolean operations, and & and | are for arithmetic or bitwise operations.
 
 # and-or operators have lower precedence than the &&-|| operators.
-a = true
-b = false
-c = true
-d = true
-a1 = a && b or c && d
-a2 = a && (b or c) && d
-puts a1
-puts a2
+# a = true
+# b = false
+# c = true
+# d = true
+# a1 = a && b or c && d # &&'s are done first
+# a2 = a && (b or c) && d # or is done first
+# puts a1 # prints false
+# puts a2 # prints true
+
+# the assignment operator has a higher precedence than the and and or operators (also true for reflexive assignment operators +=, -=, and the others)
+# x = y or z looks like a normal assignment statement, but is really a freestanding expression equivalent to (x=y) or z, in fact
+# a programmer most likely meant x = (y or z)

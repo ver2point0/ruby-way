@@ -53,3 +53,17 @@
 # the assignment operator has a higher precedence than the and and or operators (also true for reflexive assignment operators +=, -=, and the others)
 # x = y or z looks like a normal assignment statement, but is really a freestanding expression equivalent to (x=y) or z, in fact
 # a programmer most likely meant x = (y or z)
+# y = false
+# z = true
+
+# x = y or z # = is done BEFORE or!
+# puts x # prints false
+
+# (x = y) or z # = is done BEFORE or!
+# puts x # prints false
+
+# x = (y or z) # or is done first
+# puts x # prints true
+
+# variable @my_var is an instance variable (or attribute) in the context of whatever class you are coding
+# my_var is only a local variable within that context

@@ -67,3 +67,16 @@
 
 # variable @my_var is an instance variable (or attribute) in the context of whatever class you are coding
 # my_var is only a local variable within that context
+
+# In Ruby, a variable used as a for loop control variable is an ordinary variable and can be modified at will, however such 
+# modification does not affect the loop behavior
+# for loop sequentially assigns values to the variable on each iteration without regard for what may have happened to the variable inside the loop
+# for var in 1..10
+#   puts "var = #{var}"
+#   if var > 5
+#       var = var + 2
+#   end
+# end
+  
+# variable names and method names are not always distinguishable "by eye"
+# if the parser sees the identifier being assigned a value prior to its being used, it will be considered a variable; otherwise, its a method name

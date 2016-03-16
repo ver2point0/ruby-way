@@ -13,3 +13,5 @@
 #   some_action
 # end
 # this if statement is equivalent to the above case statement
+
+# do not confuse relationship operator with equality operator (==).

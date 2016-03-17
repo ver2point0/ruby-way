@@ -15,3 +15,12 @@
 # this if statement is equivalent to the above case statement
 
 # do not confuse relationship operator with equality operator (==).
+
+# x === y is not typically y === x
+# there are situations where this is true, but overall the relationship operator is not commutative.
+# reversing our original example, the following code does not behave the same way:
+# case value
+#   when expression
+#     some_action
+# end
+

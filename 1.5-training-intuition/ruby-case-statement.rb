@@ -24,3 +24,24 @@
 #     some_action
 # end
 
+# consider a str and a pattern (regular expression) pat, which matches the string
+# str =~ pat is true
+# Ruby defines the opposite meaning for =~ in Regexp, pat =~ str is true
+# Following this logic, pat === str is true
+# str === pat is not true
+
+# this means that the code fragment:
+# case "Hello"
+#   when /Hell/
+#     puts "We matched."
+# else
+#     puts "We didn't match."
+# end
+
+# does not do the same thing as this fragment:
+case /Hell/
+  when "Hello"
+    puts "We matched."
+else
+    puts "We didn't match."
+end

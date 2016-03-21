@@ -39,9 +39,12 @@
 # end
 
 # does not do the same thing as this fragment:
-case /Hell/
-  when "Hello"
-    puts "We matched."
-else
-    puts "We didn't match."
-end
+# case /Hell/
+#   when "Hello"
+#     puts "We matched."
+# else
+#     puts "We didn't match."
+# end
+
+# Ruby's case statement lacks the break statement
+# An implicit jump from each when-clause exists to the end of the case statement

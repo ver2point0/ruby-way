@@ -48,3 +48,6 @@
 
 # Ruby's case statement lacks the break statement
 # An implicit jump from each when-clause exists to the end of the case statement
+
+# values in each when-clause are essentially arbitrary. They need not be constants but can be variables or complex expressions
+# ranges or multiple values can be associated with each when-clause

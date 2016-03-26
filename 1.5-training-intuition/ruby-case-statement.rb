@@ -51,3 +51,32 @@
 
 # values in each when-clause are essentially arbitrary. They need not be constants but can be variables or complex expressions
 # ranges or multiple values can be associated with each when-clause
+
+# when-clauses may have empty actions (null statemens) associated with them
+# values in the clauses need not be unique buy may overlap, for example:
+# case x 
+#   when 0
+#   when 1..5
+#     puts "second branch"
+#   when 5..10
+#     puts "third branch"
+# else
+#   puts "fourth branch"
+# end
+# a value of 0 will do nothing, value of 5 will print second branch, even though 5 is also included in the next limb
+
+# when-clauses may overlap because they are in sequence and short-circuiting is done
+# if evaluation of the expression in a when-clause results in success, the when-clauses that follow are not never evaluated
+# it is a bad idea for when-clauses to have method calls that have side effects
+# this behavior may mask runtime errors that would occur if expressions were evaluated, here is an example:
+# case x 
+#   when 1..10
+#     puts "first branch"
+#   when foobar() # possible side effects?
+#     puts "second branch"
+#   when 5 / 0 # divide by zero!
+#     puts "third branch"
+# else
+#   puts "fourth branch"
+# end
+# as long as x is between 1..10, foobar() will not be called, and 5 / 0 will not be evaluated

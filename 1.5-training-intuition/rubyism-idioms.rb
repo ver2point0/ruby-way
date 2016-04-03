@@ -18,3 +18,14 @@
 # x = 1..5
 # x = [1, 2, 3, 4, 5]
 # to_a will convert ranges to arrays
+
+# To assign a variable a value if it does not already have a value, use the following syntax:
+# x = x || 5 or x ||= 5
+
+# in most languages, swapping 2 variables takes an additional temporary variable
+# in Ruby, multiple assignment makes this unnecessary
+# x, y = y, x will interchange the values of x and y
+
+# class and instance are separate things
+# a class variable like @@foobar has a classwide scope
+# an instance variable like @foobar a separate existence in each object of the class

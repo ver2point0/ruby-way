@@ -29,3 +29,17 @@
 # class and instance are separate things
 # a class variable like @@foobar has a classwide scope
 # an instance variable like @foobar a separate existence in each object of the class
+
+# class methods are associated with the classes in which they are defined
+# they do not belong to any specific object and cannot be invoked as though they were
+# class methods are invoked with the name of a class
+# instane methods are invoked with the name of an object
+
+# in Ruby, the pound notation is sometimes used to indicate an instance method
+# for example, File.chmod is used to denote the class method chmod of class File
+# File#chmod is used to denote the instance method that has the same name
+# pound notation is not part of Ruby syntax but only Ruby folklore
+
+# constants are not truly constant in Ruby
+# they cannot be changed from within instance methods, but otherwise their
+# values can be changed

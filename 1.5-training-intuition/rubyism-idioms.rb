@@ -43,3 +43,16 @@
 # constants are not truly constant in Ruby
 # they cannot be changed from within instance methods, but otherwise their
 # values can be changed
+
+# in this book, top level is used as a noun
+# top-level is used as an adjective
+# their meanings are the same as everyone else's
+
+# keyword yield comes from CLU and may be misleading to some programmers
+# it's used within an iterator to invoke the block with which the iterator is called
+# it does not mean "yield", as in producing a result or returning a value, but is more like the concept of "yielding a timeslice"
+
+# the reflexive assignment operators +=. -=, and the rest are not methods nor are they operators
+# they are only "syntax sugar" or "shorthand" for their longer forms
+# therefore, to say that x += y is identical to saying x = x + y, and if the + operator is overloaded, the += operator
+# is defined "automagically" as a result of this predefined shorthand

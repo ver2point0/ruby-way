@@ -56,3 +56,8 @@
 # they are only "syntax sugar" or "shorthand" for their longer forms
 # therefore, to say that x += y is identical to saying x = x + y, and if the + operator is overloaded, the += operator
 # is defined "automagically" as a result of this predefined shorthand
+
+# because of they way reflexive variables are defined, they cannot be used to initialize variables
+# if the first reference to x is x += 1, an error will result
+
+

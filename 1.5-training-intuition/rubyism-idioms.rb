@@ -60,4 +60,9 @@
 # because of they way reflexive variables are defined, they cannot be used to initialize variables
 # if the first reference to x is x += 1, an error will result
 
-
+# one can define operators for nil such that the initial nil value of the variable produces the result we want
+# here is a nil.+ method that will allow += to initialize a String or a Fixnum value, basically just returning other and thus ensuring that nil + other
+# is equal to other:
+# def nil.+(other)
+#   other
+# end

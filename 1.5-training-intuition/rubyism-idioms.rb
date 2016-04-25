@@ -66,3 +66,13 @@
 # def nil.+(other)
 #   other
 # end
+
+# Class is an object, Object is a class
+
+# some operators can't be overloaded because they are built into the language rather than implemented as methods
+# they are: = .. ... and or not && || ! != !~
+# additionally, the reflexive assignment operators cannot be overloaded
+
+# although assignment is not overloadable, it is still possible to write an instance method with name such as
+# foo= (allowing statements such as x.foo = 5)
+# the equal sign is like a suffix

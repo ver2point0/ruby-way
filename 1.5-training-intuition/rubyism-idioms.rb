@@ -76,3 +76,10 @@
 # although assignment is not overloadable, it is still possible to write an instance method with name such as
 # foo= (allowing statements such as x.foo = 5)
 # the equal sign is like a suffix
+
+# a "bare" scope operator has an implied Object before it; therefore ::Foo means Object::Foo
+
+# fail is an alias for raise
+
+# recall that definitions in Ruby are executed
+# it is possible (for example) to define 2 methods completely differently based on a flag that is tested at runtime

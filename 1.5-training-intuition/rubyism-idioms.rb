@@ -83,3 +83,41 @@
 
 # recall that definitions in Ruby are executed
 # it is possible (for example) to define 2 methods completely differently based on a flag that is tested at runtime
+
+# the for construct (for x in a ) is really calling the default  iterator each
+# any class having this iterator can be walked through with a for loop
+
+# a method defined at the top level is added to Kernel and is therefore a member of Object
+
+# a setter method (such as foo=) must be called with a receiver; otherwise, it will look like a simple assignment to a local variable of that name
+
+# the keyword retry is used only in exception handling 
+
+# an object's initialize method is always private
+
+# where a block ends in a left brace (or in end) and results in a value, that value can be used as the receiver for further method calls
+# squares = [1, 2, 3, 4, 5].collect {|x| x**2}.reverse
+# squares is now [25, 16, 9, 4, 1]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

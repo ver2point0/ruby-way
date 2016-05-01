@@ -99,7 +99,18 @@
 # squares = [1, 2, 3, 4, 5].collect {|x| x**2}.reverse
 # squares is now [25, 16, 9, 4, 1]
 
+# the idiom if $0 == __FILE__ is sometimes seen near the bottom of a Ruby program
+# this checks whether a file is being run as a standalone piece of code (true) or is being used as some kind of auxiliary piece of code such as a library(false)
+# common use: put a sort of "main program" (usually with test code in it) at the end of a library
 
+# normal subclassing or inheritance is done with the < symbol:
+# class Dog < Animal
+#   ....
+# end
+# creation of a singleton class (anonymous class that extends a single instance) is done with the << symbol:
+# class << platypus
+#   ....
+# end
 
 
 

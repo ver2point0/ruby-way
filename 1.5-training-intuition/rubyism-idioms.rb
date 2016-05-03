@@ -112,6 +112,14 @@
 #   ....
 # end
 
+# when passing a block to an iterator, there is a slight difference between braces ({}) and a do-end pair
+# This is a precedence issue
+# mymethod param1, foobar do ... end
+#   here, do-end binds with mymethod
+# mymethod param1, foobar { ... }
+#   here, {} binds with foobar, assumed to be a method
+
+
 
 
 

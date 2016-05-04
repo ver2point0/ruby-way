@@ -119,7 +119,17 @@
 # mymethod param1, foobar { ... }
 #   here, {} binds with foobar, assumed to be a method
 
-
+# it is somewhat traditional in Ruby to put single-line blocks in braces and multiline blocks in do-end pairs
+# here are some examples:
+# my_array.each { |x| puts x }
+# my_array.each do |x|
+#  print x
+#  if x % 2 == 0
+#   puts " is even."
+#  else
+#   puts " is odd."
+#  end
+# end
 
 
 

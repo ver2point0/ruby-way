@@ -165,8 +165,17 @@
 # c = cube.call(6) 216
 # d = cube.call(8) 512
 
+# consider this contrived example
+# inside the block of the times iterator, a new context is started so that x is a local variable
+# the variable closure is already defined at the top level, so it will not be defined as local to the block
+# closure = nil   # define closure so the name will be known
+# 1.times do      # start a new context
+#  x = 5          x is local to this block
+#  closure = Proc.new { puts "In closure, x = #{x}" }
+# end
 
-
+# x = 1           # defined x at top level
+# closure.call    # prints: In closure, x = 5
 
 
 

@@ -144,7 +144,26 @@
 # c = cube.call(6) # 216
 # d = cube.call(8) 512
 
+# assume that a closure uses a variable defined in an outer scope
+# Here is a misuse of it
+# $exponent = 0
+# def power
+#   proc {|base| base**exponent}
+# end
 
+# $exponent = 2
+# square = power
+
+# $exponent = 3
+# cube = power
+
+# a = square.call(11) 1331 is wrong answer
+# b = square.call(5) 125 is wrong answer
+
+# a and b are wrong because the CURRENT value of exponent is being used
+
+# c = cube.call(6) 216
+# d = cube.call(8) 512
 
 
 

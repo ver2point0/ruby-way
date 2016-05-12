@@ -177,7 +177,25 @@
 # x = 1           # defined x at top level
 # closure.call    # prints: In closure, x = 5
 
+# variables starting with a single @, defined inside a class, are generally instance variables
+# variables defined outside any method are class instance variables
+# here is an example:
+# class MyClass
+#  @x = 1 # class instance variable
+#  @y = 2 # another one
+#
+#  def my_method
+#   @x = 3 # instance variable
+#   #@y is not accessible here
+#  end
+# end
 
+# attr, attr_reader, attr_writer, attr_accessor are shorthand for "getter" and "setter" actions
+# they take symbols as arguments (the instances of class Symbol)
+
+# there is no assignment with the scope operator
+# the following is illegal:
+# Math::PI = 3.2
 
 
 

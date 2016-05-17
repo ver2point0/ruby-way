@@ -4,3 +4,24 @@ a = b = c = [] # danger! a, b, and c now all refer to the SAME empty array
 
 x = 5
 y = x += 2 # x and y are both 7
+
+a = 5
+x = if a < 8 then 6 else 7 end # x is no2 6
+
+y = if a < 8 # y is 6 also;
+  6          # if-statement can be on 
+else         # a single line
+  7          # of multiple lines
+end
+
+# unless also works; z will be assigned 4
+z = unless x == y then 3 else 4 end
+
+t = case a
+  when 0..3
+    "low"
+  when 4..6
+    "medium"
+else
+  "high"
+end

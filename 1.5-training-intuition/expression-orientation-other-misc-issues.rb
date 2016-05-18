@@ -25,3 +25,34 @@ t = case a
 else
   "high"
 end
+
+# while and until loops do not return useful values but typically return nil
+i = 0
+x = while (i < 5) # x is nil
+  puts i += 1
+end
+
+# ternary decision operator can be used with statements or expressions
+# the parentheses here are necessary
+x = 6
+y = x == 5 ? 0 : 1 # y is now 1
+x == 5 ? puts("Hi") : puts("Bye") # prints bye
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

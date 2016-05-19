@@ -38,6 +38,13 @@ x = 6
 y = x == 5 ? 0 : 1 # y is now 1
 x == 5 ? puts("Hi") : puts("Bye") # prints bye
 
+# the return at the end of a method can be omitted
+# a method always returns the last expression evaluated in its body, regardless of what happens
+
+# when an iterator is called with a block, the last expression evaluated in the block is returned as the value of the block
+# therefore, if the body of an iterator has a statement such as x = yield, that value can be captured
+
+
 
 
 

@@ -44,7 +44,10 @@ x == 5 ? puts("Hi") : puts("Bye") # prints bye
 # when an iterator is called with a block, the last expression evaluated in the block is returned as the value of the block
 # therefore, if the body of an iterator has a statement such as x = yield, that value can be captured
 
+# the multiline modifier /m can be appended to a regex, in which case . (dot) will match a newline character
 
+# beware of zero-length matches in regular expressions
+# "nothingness" can match a pattern, if that is the case, a match will alway be found
 
 
 

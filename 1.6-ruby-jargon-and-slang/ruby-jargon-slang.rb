@@ -20,3 +20,13 @@ class << str
 end
 
 str.hyphenated
+
+class MyClass
+  class << self
+    def hello
+      puts "Hello from #{self}!"
+    end
+  end
+end
+
+MyClass.hello

@@ -17,3 +17,9 @@ str = <<'EOF'
 This isn't a tab: \t
 and this isnt' a new linw: \n
 EOF
+
+str = <<-EOF
+  Each of these lines
+  starts with a pair
+  of blank spaces.
+  EOF

@@ -23,3 +23,12 @@ str = <<-EOF
   starts with a pair
   of blank spaces.
   EOF
+  
+class String
+  def strip_heredoc
+    # find the margin whitespace on the first line
+    margin = self[/\A\s*/]
+    # remove the margin-sized whitespace from each line
+    gsub(/\{#{margin.size}}/,"")
+  end
+end

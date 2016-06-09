@@ -32,3 +32,11 @@ class String
     gsub(/\{#{margin.size}}/,"")
   end
 end
+
+str = <<end.strip_heredoc
+  This here-document has a "left margin"
+  set by the whitespace on the first line.
+  
+  We can do inset quotations here,
+  hanging indentions, and so on.
+end

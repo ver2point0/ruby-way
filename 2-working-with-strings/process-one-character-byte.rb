@@ -6,5 +6,13 @@ puts
 
 str2 = "ABC"
 str2.each_char { |char|
-print char, " " }
+print char, " " 
+}
+puts
+
+str3 = "ABC"
+chars = str3.scan(/./)
+chars.each { |char|
+  print char, " " 
+}
 puts

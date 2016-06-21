@@ -7,12 +7,12 @@ class String
     b = other.dup
     
     # remove punctuation
-    a.gsub!()
-    b.gsub!()
+    a.gsub!(/[\,\.\?\!\:\;]/, "")
+    b.gsub!(/[\,\.\?\!\:\;]/, "")
     
     # remove initial articles
-    a.gsub!()
-    b.gsub!()
+    a.gsub!(/^(a |an |the)/i, "")
+    b.gsub!(/^(a |an |the)/i, "")
     
     # remove leading/trailing whitespace
     a.strip!
@@ -21,5 +21,15 @@ class String
     # use old <=>
     a.old_compare(b)
   end
+end
+
+title1 = "Calling All Cars"
+title2 = "The Call of the Wild"
+
+# ordinarily this would print "yes"
+if title1 < title2
+  puts "yes"
+else
+  puts "no" # it prints "no"
 end
 

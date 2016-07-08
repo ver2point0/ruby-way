@@ -15,3 +15,10 @@ s6 = s3.capitalize # "Boston tea party:"
 puts s4
 puts s5
 puts s6
+
+# swapcase: changes case of each letter in a string
+s7 = "THIS is A big FAT elephant"
+s8 = s7.swapcase # "this IS a BIG fat ELEPHANT"
+
+puts s7
+puts s8

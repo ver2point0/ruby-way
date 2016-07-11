@@ -22,3 +22,10 @@ s8 = s7.swapcase # "this IS a BIG fat ELEPHANT"
 
 puts s7
 puts s8
+
+# cascmp: acts like <=>, but ignores case
+n1 = "abc".casecmp("xyz") # -1
+n2 = "abc".cascmp("XYZ") # -1
+n3 = "ABC". casecmp("xyz") # -1
+n4 = "ABC".casecmp("abc") # 0
+n5 = "xyz".casecmp("abc") # 1

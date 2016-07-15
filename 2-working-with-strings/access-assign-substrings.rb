@@ -14,3 +14,14 @@ sub5 = str2[-13, 4] # "Look"
 
 p sub4
 p sub5
+
+str3 = "Winston Churchill"
+sub6 = str3[8..13] # "Church"
+sub7 = str3[-4..-1] # "hill"
+sub8 = str3[-1..-4] # nil
+sub9 = str3[25..30] # nil
+
+p sub6
+p sub7
+p sub8
+p sub9

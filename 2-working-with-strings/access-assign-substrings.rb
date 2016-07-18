@@ -25,3 +25,12 @@ p sub6
 p sub7
 p sub8
 p sub9
+
+str4 = "Alistair Cooke"
+sub10 = str4[/l..t/] # "list"
+sub11 = str4[/s.*r/] # "stair"
+sub12 = str4[/foo/] # nil
+
+p sub10
+p sub11
+p sub12

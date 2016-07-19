@@ -34,3 +34,16 @@ sub12 = str4[/foo/] # nil
 p sub10
 p sub11
 p sub12
+
+str5 = "theater"
+sub13 = str5["heat"] # "heat"
+sub14 = str5["eat"] # "eat"
+sub15 = str5["ate"] # "ate"
+sub16 = str5["beat"] # nil
+sub17 = str5["cheat"] # nil
+
+p sub13
+p sub14
+p sub15
+p sub16
+p sub17

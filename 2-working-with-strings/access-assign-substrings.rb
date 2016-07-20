@@ -47,3 +47,54 @@ p sub14
 p sub15
 p sub16
 p sub17
+
+
+str6 = "Aaron Burr"
+ch1 = str6[0] # "A"
+ch2 = str6[1] # "a"
+ch3 = str6[99] # nil
+
+p ch1
+p ch2
+p ch3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

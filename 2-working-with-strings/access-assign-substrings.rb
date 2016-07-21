@@ -58,43 +58,31 @@ p ch1
 p ch2
 p ch3
 
+str7 = "Humpty Dumpty"
+str7[7, 4] = "Moriar" # "Humpty Moriarty"
 
+str8 = "Alice"
+str8[-3, 3] = "exandra" # "Alexandra"
 
+str9 = "Through the Looking-Glass"
+str9[-13, 13] = "Mirror" # "Through the Mirror"
 
+str10 = "Winston Churchill"
+str10[8..13] = "H" # "Winston Hill"
 
+str11 = "Alistair Cooke"
+str11[/e$/] = "ie Monster" # "Alistair Cookie Monster"
 
+str12 = "theater"
+str12["er"] = "re" # "theatre"
 
+str13 = "Aaron Burr"
+str13[0] = "B"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+p str7
+p str8
+p str9
+p str10
+p str11
+p str12
+p str13

@@ -15,3 +15,8 @@ s5 = s4.sub(/spam/) { |m| m.reverse }
 # "Don't forget the maps."
 
 p s5
+
+s4.sub!(/spam/) { |m| m.reverse }
+# s4 is now "Don't forget the maps."
+
+p s4

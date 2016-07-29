@@ -20,3 +20,11 @@ s4.sub!(/spam/) { |m| m.reverse }
 # s4 is now "Don't forget the maps."
 
 p s4
+
+s6 = "alfalfa abracadabra"
+s7 = s6.gsub(/a[bl]/, "xx") # "xxfxxfa xxracaxxra"
+s6.gsub!(/[lfdbr]/) { |m| m.upcase + "-" }
+# s6 is now "aL-F-aL-F-a aB-R-acaD-aB-R-a"
+
+p s6
+p s7

@@ -26,3 +26,15 @@ p pos9
 p pos10
 p pos11
 p pos12
+
+str1 = "mathematics"
+flag1 = str1.include?(?e) # true
+flag2 = str1.include?("math") # true
+str2 = "Daylight Saving Time"
+flag3 = str2.include?(?s) # false
+flag4 = str2.include?("Savings") # false
+
+p flag1
+p flag2
+p flag3
+p flag4

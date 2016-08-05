@@ -38,3 +38,7 @@ p flag1
 p flag2
 p flag3
 p flag4
+
+str3 = "abracadabra"
+sub1 = str3.scan(/a./)
+# sub1 now is ["ab", "ac", "ad", "ab"]

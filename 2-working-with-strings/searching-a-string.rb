@@ -42,3 +42,10 @@ p flag4
 str3 = "abracadabra"
 sub1 = str3.scan(/a./)
 # sub1 now is ["ab", "ac", "ad", "ab"]
+
+str4 = "Acapulco, Mexico"
+sub2 = str4.scan(/(.)(c.)/)
+# sub2 now is [ ["A", "ca"], ["l", "co"], ["i", "co"] ]
+
+p sub1
+p sub2

@@ -49,3 +49,12 @@ sub2 = str4.scan(/(.)(c.)/)
 
 p sub1
 p sub2
+
+str5 = "Kobayashi"
+str5.scan(/[^aeiou] + [aeiou]/) do |x|
+  print "Syllable: #{x}\n"
+end
+# Syllable: Ko
+# Syllable: ba
+# Syllable: ya
+# Syllable: shi

@@ -14,3 +14,13 @@ print "Element is "
 puts e  # Element is He
 puts "Element is " + e # Element is helium
 puts "Element is #{e}" # Element is He
+
+def set_title(title)
+  if title.respond_to? :to_str
+    title = title.to_str
+  end
+  # ...
+end
+
+# shorer way for the above method
+title = title.to_str if title.respond_to?(:to_str)

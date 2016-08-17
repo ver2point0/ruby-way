@@ -22,5 +22,9 @@ def set_title(title)
   # ...
 end
 
-# shorer way for the above method
+# shorter way for the above method
 title = title.to_str if title.respond_to?(:to_str)
+
+x = Helium.new
+str = "Pi #{3.14} and element #{x}"
+puts str

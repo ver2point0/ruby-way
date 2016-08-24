@@ -32,3 +32,11 @@ p s7
 p s8
 p s9
 p s10
+
+str7 = "abcxyz"
+str8 = "abcxyz"
+s11 = str7.chomp("yz") # "abcx"
+s12 = str8.chomp("x") # "abcxyz"
+
+p s11
+p s12

@@ -17,4 +17,8 @@ str = "The answer is #{
                         
                         answer = factorial(3) * 7
                       }, of course."
-puts str
+puts str  # The answer is 42, of course.
+
+$gvar = "global"
+@ivar = "instance"
+puts "$gvar = #$gvar and @ivar = #@ivar"

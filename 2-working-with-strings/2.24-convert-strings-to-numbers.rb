@@ -5,3 +5,10 @@ y = Integer("123") # 123
 
 puts x
 puts y
+
+# when a string is not a valid number, behavior differs:
+a = "junk".to_i         # silently returns 0
+b = Integer("junk")     # error
+
+# puts a
+# puts b

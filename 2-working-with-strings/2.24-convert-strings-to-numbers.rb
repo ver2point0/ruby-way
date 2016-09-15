@@ -12,3 +12,10 @@ b = Integer("junk")     # error
 
 # puts a
 # puts b
+
+# to_i stops converting when it reaches a non-numeric character, but Integer raises an error:
+c = "123junk".to_i    # 123
+d = Integer("123junk") # error
+
+puts c
+# puts d

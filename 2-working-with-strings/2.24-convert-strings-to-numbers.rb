@@ -19,3 +19,10 @@ d = Integer("123junk") # error
 
 puts c
 # puts d
+
+# to_i and Integer allow leading and trailing whitespace
+e = " 123 ".to_i  # 123
+f = Integer(" 123 ") # 123
+
+p e
+p f

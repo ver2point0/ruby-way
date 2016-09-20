@@ -26,3 +26,10 @@ f = Integer(" 123 ") # 123
 
 p e
 p f
+
+# floating point conversion works the way
+g = "3.1416".to_f # 3.1416
+h = Float("2.718") # 2.718
+
+puts g
+puts h

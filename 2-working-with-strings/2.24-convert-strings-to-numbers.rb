@@ -33,3 +33,10 @@ h = Float("2.718") # 2.718
 
 puts g
 puts h
+
+# both Float conversion methods honor scientific notation
+i = "2.9979246e5".to_f    # 299792.46
+j = Float("6.02e23")      # 6.02e23
+
+puts i
+puts j

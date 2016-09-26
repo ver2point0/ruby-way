@@ -41,7 +41,7 @@ j = Float("6.02e23")      # 6.02e23
 puts i
 puts j
 
-# convert between numeric bases
+# convert between numeric bases, default is base 10
 k = Integer("0b111")    # binary        returns 7
 l = Integer("0111")     # octal         returns 73
 m = Integer("0x111")    # hexadecimal   returns 273
@@ -56,3 +56,12 @@ p m
 p n
 p o
 p q
+
+# to_i allows an optional parameter to indicate the base
+r = "111".to_i(2)   # 7
+s = "111".to_i(8)   # octal 73
+t = "111".to_i(16)  # hexadecimal 273
+
+p r
+p s
+p t 

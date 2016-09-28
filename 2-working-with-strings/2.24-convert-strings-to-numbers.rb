@@ -65,3 +65,10 @@ t = "111".to_i(16)  # hexadecimal 273
 p r
 p s
 p t 
+
+# digits inappropriate for a given base will be treated differently
+u = "12389".to_i(8)   # 83  
+v = Integer("012389") # error (8 is illegal)
+
+p u
+# p v 

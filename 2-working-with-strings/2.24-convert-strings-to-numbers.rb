@@ -72,3 +72,10 @@ v = Integer("012389") # error (8 is illegal)
 
 p u
 # p v 
+
+# to_i can handle bases up 36 using all letters of the alphabet
+w = "123".to_i(5)   # 38
+base = "ruby".to_i(36) # 1299022
+
+p w 
+p base 

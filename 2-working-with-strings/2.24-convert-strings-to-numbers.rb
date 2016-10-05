@@ -79,3 +79,6 @@ base = "ruby".to_i(36) # 1299022
 
 p w 
 p base 
+
+str = "234 234 234"
+first, second, third = str.scanf("%d %o %x") # 234, 156, 564
